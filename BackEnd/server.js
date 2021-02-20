@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 // Using the routes.
-const test = require("./routes/user.routes.js");
+require("./app/routes/user.routes.js")(app);
 
 // set port, listen for requests
 app.listen(3000, () => {
