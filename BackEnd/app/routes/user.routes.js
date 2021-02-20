@@ -4,18 +4,18 @@ module.exports = (app) => {
   // Create a new user
   app.post("/users", users.create);
 
-  // Retrieve all users
+  // Retrieve all users /*Working*/
   app.get("/users", users.findAll);
 
-  // Retrieve a single user with userId
+  // Retrieve a single user with userId  /*Working*/
   app.get("/users/:userId", users.findOne);
 
   // Update a user with userId
   app.put("/users/:userId", users.update);
 
-  // Delete a user with userId
+  // Delete a user with userId /*Working*/
   app.delete("/users/:userId", users.delete);
 
-  // Create a new user
+  // delete all users
   app.delete("/users", users.deleteAll);
 };
